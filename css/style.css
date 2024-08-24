@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-img.png);
 }
 
 .container {
@@ -61,10 +62,16 @@ body {
 .nav .sign-up {
     padding: 10px 25px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
     color: black;
+}
+
+.nav .sign-up:hover {
+    background-color: #001AFF;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 .hero {
@@ -120,4 +127,115 @@ body {
     color: #001AFF;
     font-weight: 600;
     font-size: 16px;
+}
+
+.mb-70 {
+    margin-bottom: 40px;
+}
+
+.job-headline {
+    margin-bottom: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.job-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 30px 60px rgba(0, 26, 255, 0.1);
+    width: calc(100% / 3);
+    border-radius: 8px;
+    padding: 25px 25px;
+}
+
+.job-card:hover {
+    background-color: #001AFF;
+}
+
+.job-card:hover .job-name,
+.job-card:hover .job-salary {
+    color: #fff;
+}
+
+.job-card:hover .job-company,
+.job-card:hover .job-description {
+    color: #fff;
+}
+
+.job-card:hover .job-tag {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.job-card:hover .job-divider {
+    border-color: rgba(255, 255, 255,0.2);
+}
+
+.job-list {
+    display: flex;
+    gap: 30px;
+}
+
+.job-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.job-logo {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.job-meta {
+    margin-left: 13px;
+}
+
+.job-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.job-company {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.job-description {
+    margin: 17px 0;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.job-divider {
+    margin: 25px 0;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.job-footer {
+    display: flex;
+    align-items: center;
+}
+
+.job-salary {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 26px;
+}
+
+.job-tags {
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.07);
+    font-weight: 600;
+    font-size: 12px;
 }
